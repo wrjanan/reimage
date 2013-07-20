@@ -1,0 +1,125 @@
+body { font-size:16px; color:#666; min-width:1020px; font-family:'PT Sans Narrow', sans-serif; }
+body, html { width:100%; height:100%; }
+
+a { text-decoration:none; color:#666; }
+a:hover { color:#772d37; }
+
+.area_restrita{
+ float:right;
+ top:10px;
+ right:10px;
+ background:black;
+ position:absolute;
+ z-index:5;
+ width:140px;
+ height:45px;
+ background:url(../images/btnArea.jpg);
+}
+
+
+/* ------------------- #mainMenu ------------------- */
+
+.container-fluid {
+	min-height: 561px;
+	height: 100%;
+	display:none;
+	margin-left:202px;
+	padding:0px 20px 0px 20px;
+}
+
+#mainMenu { position:absolute; z-index:100; color:#FFF; margin-right:10px; min-height:100%;width:202px; background:url(../images/bgr_mainMenu_pattern.png) top left repeat-y; }
+#mainMenu .logo { width:170px; height:50px; position:relative; margin:60px auto 0; }
+
+/* commom */
+#mainMenu .container, 
+#mainMenu .social { position:relative; width:181px; margin:0 auto; }
+
+#mainMenu .assine { position:relative; width:202px; margin:0 auto; }
+
+#mainMenu .hr { width:100%; height:2px; background:url(../images/bgr_mainMenuHr.png) top left repeat-x; }
+#mainMenu .menuBottom { position:absolute; bottom:0; left:0; width:202px; background:url(../images/bgr_MainMenuBottom.png) left top repeat-y; }
+
+/* .container */
+#mainMenu .container { margin-top:79px; background:url(../images/bgr_mainMenuHr.png) top left repeat-x; }
+#mainMenu .container ul { position:relative; top:2px; }
+#mainMenu .container ul li { width:180px; position:relative; background:url(../images/bgr_mainMenuHr.png) bottom left repeat-x; height:30px; }
+
+/* .submenu */
+#mainMenu .submenu, 
+#mainMenu .submenu ul, 
+#mainMenu .submenu ul li { width:auto; word-wrap:none; }
+
+#mainMenu .submenu { border-top:1px solid #693d3d; border-left:1px solid #693d3d; border-right:1px solid #693d3d; top:0; left:191px; top:0; position:absolute; display:none; }
+
+#mainMenu .submenu .submenu.smInternal { display:none; left:264px; top:-1px;}
+
+#mainMenu .container ul li:hover > .submenu { display:block; }
+#mainMenu .container ul li:hover > .submenu li:hover .submenu.smInternal { display:block; }
+
+#mainMenu .assine .submenu { top:-16px; border-bottom:1px solid #693d3d; padding:10px 0; opacity:0.95; -moz-opacity: 0.95; filter: alpha(opacity=95); left:202px; width:255px; background:#5b1e1e; }
+#mainMenu .assine .submenu .bottom { line-height:18px; font-family:'VollkornItalic', serif; color:#FFF; width:234px; margin:8px auto 0; text-align:left; }
+#mainMenu .assine .submenu .bottom a.btn { font-size:18px; float:right; color:#FFF; text-shadow:1px 1px 1px #000; }
+#mainMenu .assine .submenu .bottom span, 
+#mainMenu .assine .submenu .bottom label { display:inline !important; }
+.lojista{ color:#FFF;}
+
+#mainMenu .assine .submenu .field-container { opacity:0.95; -moz-opacity: 0.95; filter: alpha(opacity=95); border:1px solid #3C221E; margin:0 auto; width:232px; background:#14120D; }
+#mainMenu .assine .submenu .field-container input { width:212px; height:31px; line-height:31px; padding:0; font-size:15px; color:#59403C; font-family:'VollkornItalic', serif; background:none; border:none; margin:0 auto; }
+#mainMenu .assine .submenu .field-container .line { width:212px; border-top:1px solid #3C221E; margin:0 auto; }
+
+#mainMenu .container ul li .submenu ul { top:0; }
+#mainMenu .container ul li .submenu ul li { vertical-align:top; min-height:30px; line-height:30px; background:none; border-bottom:1px solid #693d3d; }
+#mainMenu .container ul li .submenu ul li a { word-wrap:none; min-width:244px; background:#5b1e1e; opacity:0.80; -moz-opacity: 0.80; filter: alpha(opacity=80); line-height:26px; color:#FFF; padding-left:20px; padding-right:0; margin:0; text-shadow:none; padding-top:4px; }
+#mainMenu .container ul li .submenu ul li a:hover { background:#6b3b3b; }
+
+/* .bullet */
+#mainMenu .container ul li .bullet { z-index:1; position:absolute; right:0px; top:0; width:27px; height:27px; background:url(../images/ico_mainMenuBullet.png); }
+#mainMenu .container ul li:hover .bullet { background-position:0 -27px; }
+
+#mainMenu .container ul li a { position:relative; z-index:2; width:176px; float:left; display:block; padding-left:15px; line-height:26px; font-family: 'VollkornItalic', serif; font-size:18px; color:#FFF; text-shadow:1px 1px 9px #000; cursor:pointer; padding-top:4px; }
+#mainMenu .container ul li:hover a { color:#FF6D6E; }
+
+/* .navigation */
+#mainMenu .supersizedNavigation { width:187px; height:64px; margin:32px auto 0; position:relative; }
+
+#mainMenu .supersizedNavigation .hr { left:0; position:absolute; }
+#mainMenu .supersizedNavigation .hr.first { top:0; }
+#mainMenu .supersizedNavigation .hr.last { bottom:0; }
+
+#mainMenu .supersizedNavigation .spControl { cursor:pointer; position:relative; top:2px; float:left; height:60px; }
+#mainMenu .supersizedNavigation .spControl.btnLeft { background:url(../images/btn_prevMenu.png) top right no-repeat; width:93px; }
+#mainMenu .supersizedNavigation .spControl.btnRight { background:url(../images/btn_nextMenu.png) top left no-repeat; width:94px; }
+#mainMenu .supersizedNavigation .spControl.btnLeft:hover { background-position:-2px -60px; }
+#mainMenu .supersizedNavigation .spControl.btnRight:hover { background-position:0 -60px; }
+
+/* .social */
+#mainMenu .social { position:relative; height:45px; /*margin-top:23px;*/margin-top: 18px;  }
+#mainMenu .social p { line-height:20px; font-size:15px; display:inline; margin-left:6px; /*width:107px;*/ float:left; }
+
+#mainMenu .social div.icons { margin-top:6px; /*width:53px;*/width:181px; float:left; padding-bottom: 12px; }
+#mainMenu .social div.icons a.icon { display:block; float:left;}
+
+#mainMenu .social div.icons a.icon.facebook { background:url(../images/facebook.png) top left no-repeat; width:40px; height:39px; margin-right:7px;}
+#mainMenu .social div.icons a.icon.facebook:hover { background-position:0 -40px; }
+
+#mainMenu .social div.icons a.icon.instagram { background:url(../images/instagram.png) top left no-repeat; width:40px; height:39px; margin-right:7px; }
+#mainMenu .social div.icons a.icon.instagram:hover { background-position:0 -40px; }
+
+#mainMenu .social div.icons a.icon.tumblr { /*margin-right:13px;*/ background:url(../images/tumblr.png) top left no-repeat; width:40px; height:39px; margin-right:7px;}
+#mainMenu .social div.icons a.icon.tumblr:hover { background-position:0 -40px; }
+
+#mainMenu .social div.icons a.icon.twitter { background:url(../images/twitter.png) top left no-repeat; width:40px; height:39px; }
+#mainMenu .social div.icons a.icon.twitter:hover { background-position:0 -40px; }
+
+/* .assine */
+#mainMenu .assine { line-height:18px; margin-top:15px; text-align:center; }
+#mainMenu .assine a { font-size:15px; color:#FFF; font-family:'VollkornItalic', serif;  }
+#mainMenu .assine:hover a { color:#FF6D6E; }
+
+/* .hrFigure */
+#mainMenu .hrFigure { margin:15px auto 0; background:url(../images/img_mainMenuDivisor.png) top left no-repeat; width:169px; height:27px; }
+
+/* body.hasSupersized */
+body.hasSupersized .subtitle { opacity:0.80; -moz-opacity: 0.80; filter: alpha(opacity=80); padding:10px; background:#000; border:10px solid #222; z-index:99; position:absolute; z-index:1; bottom:111px; left:262px; }
+body.hasSupersized .subtitle p { font-weight:bold; color:#FFF !important; font-size:34px !important; line-height:34px !important; }
+body.hasSupersized .subtitle h2 { color:#FF6D6E; font-size:18px; display:block; line-height:18px; }
