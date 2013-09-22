@@ -150,9 +150,49 @@
 	</div>
 	 -->
     
-	<div id="Us" class="container-fluid" style="background:whitesmoke"></div> 
+	<div id="Us" class="container-fluid" style="background-image:url('images/imagem_home_28_imagem.jpg'); background-size:105%">
+		<div class="inner-top"></div>
+		<div class="inner-left"></div>
+		<div id="Us1" class="inner-content">
+			<b><u>About us</u></b>
+			<br />
+			<br />
+			Reimage Decor is founded by a group 
+			of <font color="blue">highly experienced</font> renovation 
+			specialist who are able to offer a 
+			high level of technical services standards to the discerning 
+			and <font color="green">environmentally responsible</font> customers. 
+			<br />
+			<br />
+			Reimage Decor is proud to deliver high quailty services, offering quailty products, workmanship that will redefine your experience and style.
+		</div>
+	</div> 
 
-	<div id="Capabilities" class="container-fluid" style="background:black;"></div>
+	<div id="Capabilities" class="container-fluid" style="background-image:url('images/imagem_home_29_imagem.jpg'); background-size:105%">
+		<div class="inner-top"></div>
+		<div class="inner-left"></div>
+		<div id="Capabilities1" class="inner-content">
+		
+			<b><u>Capabilities</u></b>
+			<br />
+			<br />
+					We have a plethora of experience and am confident to deliver our services in a timely and high quality fashion.
+					Because your real estate deserves only the best finishing in the fastest time.
+			
+			<br />
+			Reimage Decor main scopes of services for Residential and Commercial projects of the following main areas:
+			
+			<br />
+			<br />
+			1) Project Management
+			
+			<br />
+			2) Project Site Coordination
+			
+			<br />
+			3) Outfits Works
+		</div>
+	</div>
 	
 	<div id="Classics" class="container-fluid" style="background:Grey;">
 		<!DOCTYPE html>
@@ -195,12 +235,38 @@
 		
 	</div>
 	
-	<div id="Trendy" class="container-fluid" style="background:blue;"></div>
+	<div id="Trendy" class="container-fluid" style="background-image:url('images/imagem_home_33_imagem.jpg'); background-size:105%">
+	<div class="inner-top"></div>
+	<div class="inner-left"></div>
+	<div id="Trendy1" class="inner-content"></div>
+	</div>
 	
-	<div id="Vintage" class="container-fluid" style="background:yellow;"></div>
+	<div id="Vintage" class="container-fluid" style="background-image:url('images/imagem_home_34_imagem.jpg'); background-size:105%">
+	<div class="inner-top"></div>
+	<div class="inner-left"></div>
+	<div id="Vintage1" class="inner-content"></div>
+	</div>
 	
-	<div id="History" class="container-fluid" style="background:green;"></div>
+	<div id="History" class="container-fluid" style="background-image:url('images/imagem_home_33_imagem.jpg'); background-size:105%">
+	<div class="inner-top"></div>
+	<div class="inner-left"></div>
+	<div id="History1" class="inner-content"></div>
+	</div>
 	
+	<div id="Motto" class="container-fluid" style="background-image:url('images/imagem_home_34_imagem.jpg'); background-size:105%">
+		<div class="inner-top"></div>
+		<div class="inner-left"></div>
+		<div id="Motto1" class="inner-content">
+		
+			<b><u>Motto</u></b>
+			<br />
+			<br />
+			Our mission is to help our client by providing a practical and cost effective ways of designing and renovating their new and existing premises. 
+			<br />Maintaining a good rapport and services with client before and after projects is one of our company's mission. 
+			<br />In Reimage Decor, our philosophy is to provide a quailty services, meeting the changing needs of clients to complement every lifestyle and culture preferences. 
+			<br />We take pride in our work and believe that a smooth completion of your property is a testament to our success.
+		</div>
+	</div>
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	
@@ -314,61 +380,34 @@
 				//$("#" + prevTitle).css("display", "none");
 				$("#" + prevTitle).toggle("fold");
 				$("#" + this.title).toggle("fold");
+				//$("#" + prevTitle + "1").toggle("fold");
+				//$("#" + this.title + "1").toggle("fold");
 				prevTitle = this.title;
 			});
 			
 			$(".spControl").click(function() {
 				$("#supersized").fadeIn();
 				$("#" + prevTitle).toggle("fold");
+				//$("#" + prevTitle + "1").toggle("fold");
 				prevTitle = "";
 			});
 			
-		    $("#Us").load("../pages/home/Us.html");
-		    $("#Capabilities").load("../pages/home/Capabilities.html");
+		    //$("#Us1").load("../pages/home/Us.html");
+		    //$("#Capabilities1").load("../pages/home/Capabilities.html");
 		    
 		   // $("#Classics").load("../pages/gallery/Classics.html");
-		    $("#Trendy").load("../pages/gallery/Trendy.html");
-		    $("#Vintage").load("../pages/gallery/Vintage.html");
+		    //$("#Trendy1").load("../pages/gallery/Trendy.html");
+		    //$("#Vintage1").load("../pages/gallery/Vintage.html");
 		    
-		    $("#History").load("../pages/about/History.html");
-		    $("#Motto").load("../pages/about/Motto.html"); 
+		    //$("#History1").load("../pages/about/History.html");
+		    //$("#Motto1").load("../pages/about/Motto.html"); 
 
 			
-		    function createRequestObject() 
-		    {
-		     var obj;
-		     var browser = navigator.appName;
-		         if(browser == "Microsoft Internet Explorer"){
-		        obj = new ActiveXObject("Microsoft.XMLHTTP");
-		     }else{
-		         obj = new XMLHttpRequest();
-		     }
-		     return obj;
-		    }
-		    /*
-		    function sendReq(req) 
-		    {    
-		    http.open('get', req);
-		    http.onreadystatechange = handleResponse;
-		    http.send(null);
-		    }
-*/
-		    function handleResponse() 
-		    {    
-		     if (http.readyState == 4)
-		     {
-		         var response = http.responseText;
-		         document.getElementById('Motto').innerHTML=response;
-		     }
-		    }
-
-/*
-		     sendReq('https://www.facebook.com/reimagedecor1');
-	*/	    
+		   
 		});
 	</script>
 	
-	<div id="Motto" class="container-fluid" style="background:cyan;"><iframe id="myframe" src="www.facebook.com" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:100%; display:none"></iframe></div>
+	
 	
 	<script type="text/javascript" src="js/supersized.3.2.5.js"></script>
 	
