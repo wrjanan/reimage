@@ -60,7 +60,7 @@ a:hover { color:#772d37; }
 #mainMenu .assine .submenu .bottom { line-height:18px; font-family:'VollkornItalic', serif; color:#FFF; width:234px; margin:8px auto 0; text-align:left; }
 #mainMenu .assine .submenu .bottom a.btn { font-size:18px; float:right; color:#FFF; text-shadow:1px 1px 1px #000; }
 #mainMenu .assine .submenu .bottom span, 
-#mainMenu .assine .submenu .bottom label { display:inline !important; }
+#mainMenu .assine .submenu .bottom label { display:inline !important; }z
 .lojista{ color:#FFF;}
 
 #mainMenu .assine .submenu .field-container { opacity:0.95; -moz-opacity: 0.95; filter: alpha(opacity=95); border:1px solid #3C221E; margin:0 auto; width:232px; background:#14120D; }
@@ -71,6 +71,12 @@ a:hover { color:#772d37; }
 #mainMenu .container ul li .submenu ul li { vertical-align:top; min-height:30px; line-height:30px; background:none; border-bottom:1px solid #693d3d; }
 #mainMenu .container ul li .submenu ul li a { word-wrap:none; min-width:244px; background:#5b1e1e; opacity:0.80; -moz-opacity: 0.80; filter: alpha(opacity=80); line-height:26px; color:#FFF; padding-left:20px; padding-right:0; margin:0; text-shadow:none; padding-top:4px; }
 #mainMenu .container ul li .submenu ul li a:hover { background:#6b3b3b; }
+
+/* sub sub menu */
+#mainMenu .container ul li .submenu .subsubmenu ul { top:0; }
+#mainMenu .container ul li .submenu .subsubmenu ul li { vertical-align:top; min-height:30px; line-height:30px; background:none; border-bottom:1px solid #693d3d; }
+#mainMenu .container ul li .submenu .subsubmenu ul li a { word-wrap:none; min-width:244px; background:#5b1e1e; opacity:0.60; -moz-opacity: 0.80; filter: alpha(opacity=60); line-height:26px; color:#FFF; padding-left:20px; padding-right:0; margin:0; text-shadow:none; padding-top:4px;}
+#mainMenu .container ul li .submenu .subsubmenu ul li a:hover { background:#6b3b3b; }
 
 /* .bullet */
 #mainMenu .container ul li .bullet { z-index:1; position:absolute; right:0px; top:0; width:27px; height:27px; background:url(../images/ico_mainMenuBullet.png); }
@@ -150,105 +156,6 @@ body.hasSupersized .subtitle h2 { color:#FF6D6E; font-size:18px; display:block; 
 	display:block;
 	padding:50px;
 	float:left;
-	font-size: 34px;
+	font-size: 25px;
 }
 
-
-/* Gallery css */
-.rg-image-wrapper{
-	position:relative;
-	padding:20px 30px;
-	background:transparent url(../images/black.png) repeat top left;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	min-height:20px;
-}
-.rg-image{
-	position:relative;
-	text-align:center;
-	line-height:0px;
-}
-.rg-image img{
-	max-height:100%;
-	max-width:100%;
-}
-.rg-image-nav a{
-	position:absolute;
-	top:0px;
-	left:0px;
-	background:#000 url(../images/nav.png) no-repeat -20% 50%;
-	width:28px;
-	height:100%;
-	text-indent:-9000px;
-	cursor:pointer;
-	opacity:0.3;
-	outline:none;
-	-moz-border-radius: 10px 0px 0px 10px;
-	-webkit-border-radius: 10px 0px 0px 10px;
-	border-radius: 10px 0px 0px 10px;
-}
-.rg-image-nav a.rg-image-nav-next{
-	right:0px;
-	left:auto;
-	background-position:115% 50%;
-	-moz-border-radius: 0px 10px 10px 0px;
-	-webkit-border-radius: 0px 10px 10px 0px;
-	border-radius: 0px 10px 10px 0px;
-}
-.rg-image-nav a:hover{
-	opacity:0.8;
-}
-.rg-caption {
-	text-align:center;
-	margin-top:15px;
-	position:relative;
-}
-.rg-caption p{
-	font-size:11px;
-	letter-spacing:2px;
-	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
-	line-height:16px;
-	padding:0 15px;
-	text-transform:uppercase;
-}
-.rg-view{
-	height:30px;
-}
-.rg-view a{
-	display:block;
-	float:right;
-	width:16px;
-	height:16px;
-	margin-right:3px;
-	background:#464646 url(../images/views.png) no-repeat top left;
-	border:3px solid #464646;
-	opacity:0.8;
-}
-.rg-view a:hover{
-	opacity:1.0;
-}
-.rg-view a.rg-view-full{
-	background-position:0px 0px;
-}
-.rg-view a.rg-view-selected{
-	background-color:#6f6f6f;
-	border-color:#6f6f6f;
-}
-.rg-view a.rg-view-thumbs{
-	background-position:0px -16px;
-}
-.rg-loading{
-	width:46px;
-	height:46px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	background:#000 url(../images/ajax-loader.gif) no-repeat center center;
-	margin:-23px 0px 0px -23px;
-	z-index:100;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	opacity:0.7;
-}
